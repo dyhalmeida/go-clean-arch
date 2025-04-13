@@ -75,7 +75,19 @@ func main() {
 }
 
 func getRabbitMQChannel() *amqp.Channel {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	configs, err := configs.LoadConfig(".")
+	if err != nil {
+		panic(err)
+	}
+
+	rabbitMQURL := fmt.Sprintf("amqp://%s:%s@%s:%s/",
+		configs.RabbitMQUser,
+		configs.RabbitMQPass,
+		configs.RabbitMQHost,
+		configs.RabbitMQPort,
+	)
+
+	conn, err := amqp.Dial(rabbitMQURL)
 	if err != nil {
 		panic(err)
 	}
