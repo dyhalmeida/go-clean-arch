@@ -1,0 +1,47 @@
+# Git
+.git
+.gitignore
+.github
+
+# Docker
+.docker
+Dockerfile
+docker-compose.yml
+compose.yaml
+*.md
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/vendor/
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment variables
+.env*
+*.env
+
+# Build and debug
+/bin/
+/dist/
+debug/
+/tmp/
+
+# Test coverage
+coverage.out
+coverage.html
+
+# Local development
+notes.txt
+TODO.md
+*.log 
