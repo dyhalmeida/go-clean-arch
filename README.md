@@ -134,4 +134,4 @@ call CreateOrder
 
 Abaixo uma demonstração de como utilizar o Evans CLI para interagir com o servidor gRPC:
 
-https://github.com/dyhalmeida/go-clean-arch/blob/main/.github/evans-example.mov
+https://github.com/dyhalmeida/go-clean-arch/blob/main/.github/evans-example.gif
